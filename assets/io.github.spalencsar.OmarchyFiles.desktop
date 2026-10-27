@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Omarchy Files
+GenericName=File Manager
+Comment=File manager for Omarchy
+Exec=omarchy-files open %U
+Icon=io.github.spalencsar.OmarchyFiles
+Terminal=false
+Categories=System;FileTools;FileManager;Utility;Qt;
+Keywords=files;folders;browse;explorer;
+MimeType=inode/directory;x-scheme-handler/trash;x-scheme-handler/sftp;x-scheme-handler/smb;
+StartupNotify=true
+StartupWMClass=io.github.spalencsar.OmarchyFiles
