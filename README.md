@@ -2,7 +2,7 @@
 
 This plugin adds an Omarchy Files launcher to the Omarchy bar. A click opens
 the installed file manager. If it is not installed yet, the same click opens a
-visible terminal installer for the pinned Omarchy Files v0.1.2 release.
+visible terminal installer for the pinned Omarchy Files v0.1.3 release.
 
 ![Omarchy Files browsing a sterile demo workspace](preview.png)
 
@@ -26,7 +26,7 @@ installation summary in the terminal before confirming it.
 
 The installer:
 
-- downloads the immutable Omarchy Files v0.1.2 release for x86_64 or aarch64;
+- downloads the immutable Omarchy Files v0.1.3 release for x86_64 or aarch64;
 - verifies it against the SHA-256 checksum pinned in the script;
 - installs the binary, desktop entry, and icon below `~/.local`; and
 - does not use `sudo`, enable a service, change MIME defaults, or enable the
