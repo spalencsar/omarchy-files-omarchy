@@ -8,9 +8,9 @@ visible terminal installer for the pinned Omarchy Files v0.1.1 release.
 
 Omarchy Files is an independent, Omarchy-native evolution of
 [Dux Files](https://github.com/duxlabs-dev/dux-files). The application remains
-in its own [source repository](https://github.com/spalencsar/omarchy-files);
-this repository only contains the shell launcher and the optional user-local
-installer.
+in its own [source repository](https://github.com/spalencsar/omarchy-files).
+This Marketplace repository is generated from that canonical source and
+contains only the shell launcher and optional user-local installer.
 
 ## Install the plugin
 
@@ -50,10 +50,10 @@ Remove only the bar plugin:
 omarchy plugin remove io.github.spalencsar.omarchy-files
 ```
 
-That intentionally leaves the application installed. To remove the
-user-local application installed by this plugin, run `uninstall-app.sh` from a
-checked-out copy of this repository. It removes only the binary, desktop entry,
-and icon installed by `install-omarchy.sh`; user settings are preserved.
+That intentionally leaves the application installed. To remove the user-local
+application installed by this plugin, run `uninstall-app.sh` from a checked-out
+copy of this repository. It removes only the binary, desktop entry, and icon
+installed by `install-omarchy.sh`; user settings are preserved.
 
 If Omarchy Files was installed as an Arch package, remove it through pacman
 instead. The local uninstall script does not touch system packages.
@@ -66,6 +66,10 @@ installer. Network access happens only after the user confirms installation.
 Review `install-omarchy.sh` before accepting the download.
 
 ## Development
+
+The source of this generated repository lives in
+[`distro/omarchy-plugin`](https://github.com/spalencsar/omarchy-files/tree/master/distro/omarchy-plugin).
+Changes should be made there, not in the generated Marketplace checkout.
 
 ```bash
 omarchy plugin validate .
