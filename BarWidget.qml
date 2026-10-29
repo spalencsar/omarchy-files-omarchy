@@ -14,7 +14,7 @@ Ui.BarWidget {
   property string binaryPath: ""
   property string installedVersion: ""
 
-  readonly property string expectedVersion: "0.1.3"
+  readonly property string expectedVersion: "0.1.4"
   readonly property string homePath: Quickshell.env("HOME")
   readonly property string localBinaryPath: homePath + "/.local/bin/omarchy-files"
   readonly property string installerPath: decodeURIComponent(
