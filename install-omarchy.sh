@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-readonly APP_VERSION="0.1.4"
+readonly APP_VERSION="0.1.5"
 readonly RELEASE_BASE="https://github.com/spalencsar/omarchy-files/releases/download/v${APP_VERSION}"
 readonly INSTALL_PREFIX="${OMARCHY_FILES_INSTALL_PREFIX:-${HOME}/.local}"
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
@@ -10,11 +10,11 @@ readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 case "$(uname -m)" in
   x86_64)
     readonly RELEASE_ARCH="amd64"
-    readonly EXPECTED_SHA256="9f4e8f0869921c3c7dc0591aec3bf4186fe9ab15d962fb75845dad51cf903619"
+    readonly EXPECTED_SHA256="4504e169e093ce677506be8ed4c0f5da618b14ec434e61d24d2d2cbedf4c1209"
     ;;
   aarch64|arm64)
     readonly RELEASE_ARCH="arm64"
-    readonly EXPECTED_SHA256="be048d47b345ad467328f863337bc3e00970f435b3ff7d29da92731b03ff0240"
+    readonly EXPECTED_SHA256="80ea9a83684f65ee41b20feedd284a0afda7a0e022a14833e56b6236c7809f39"
     ;;
   *)
     echo "Unsupported architecture: $(uname -m)" >&2
